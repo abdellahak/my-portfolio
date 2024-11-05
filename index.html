@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1fbfbd99d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Abdellah Khouden</title>
+  </head>
+  <body>
+    <!-- header of the page -->
+    <header class="header" id="home">
+      <!-- the navbar -->
+      <div class="headercontainer">
+        <h1 class="logo">Khouden<span class="text-accent">.</span></h1>
+        <nav class="navbar">
+          <a href="#home" class="selectedopt">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+          <a href="#hireme"><button id="hire">Hire me</button></a>
+        </nav>
+        <div class="mobileNav"><button class="menubtn"><i class="fa-solid fa-bars"></i></button></div>
+      </div>
+
+      <!-- home section inside the header -->
+      <section class="home">
+        <img src="imgs/man-user-circle-icon.webp" alt="" class="home-img">
+        <h5>Hello I'm</h5>
+        <h1>Abdellah khouden</h1>
+        <h5>Full Stack Developer</h5>
+        <div class="home-btns">
+          <button id="download-cv">Download CV <i class="fa-solid fa-arrow-down"></i></button>
+          <button id="contact-btn">Contact me</button>
+        </div>
+       </section>
+       <div class="socials-header">
+        <a href="https://www.linkedin.com/in/abdellah-khouden/" class="linkedin-header" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/abdellahak" class="github-header" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+       </div>
+       <div class="scroll-down">
+        <a href="#work">scroll down <i class="fa-solid fa-arrow-right-long"></i></a>
+       </div>
+
+       <!-- mobile aside navbar -->
+       <div class="mobileHeader">
+        <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobileNavbar">
+            <h1 class="logo">Khouden<span class="text-accent">.</span></h1>
+            <a href="#home" class="closebtn selectedopt">Home</a>
+            <a href="#about" class="closebtn">About</a>
+            <a href="#work" class="closebtn">Work</a>
+            <a href="#resume" class="closebtn">Resume</a>
+            <a href="#contact" class="closebtn">Contact</a>
+            <a href="#hireme" class="closebtn"><button id="hire">Hire me</button></a>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- about section -->
+    <section class="about-me" id="about">
+      <h5>Get to Know Me</h5>
+      <h1>About Me</h1>
+      <div class="spliteddiv">
+        <div class="options-about">
+          <li>I’m a Full Stack Developer with expertise in crafting both the front-end and back-end of web applications.</li>
+          <button class="option-btn selected-option" id="education">Education</button>
+          <button class="option-btn" id="skills">Skills</button>
+          <button class="option-btn" id="aboutMe">About me</button>
+        </div>
+
+        <!-- education page -->
+        <div class="result-about" id="education-page">
+          <h1 class="option-title">Education :</h1>
+          <div class="cards-about">
+            <div class="card">
+              <h4>2023 - now</h4>
+              <h2>Full Stack development</h2>
+              <h5><span class="circle">●</span> OFPPT Institute</h5>
+            </div>
+            <div class="card">
+              <h4>2020 - 2023</h4>
+              <h2>Computer Science Development Diploma</h2>
+              <h5><span class="circle">●</span> OFPPT Institute</h5>
+            </div>
+            <div class="card">
+              <h4>2019 - 2020</h4>
+              <h2>Earth and Universe Sciences</h2>
+              <h5><span class="circle">●</span> IBN ZOHR University</h5>
+            </div>
+            <div class="card">
+              <h4>2018 - 2019</h4>
+              <h2>scientific baccalaureate</h2>
+              <h5><span class="circle">●</span> Assafa high school</h5>
+            </div>
+          </div>
+        </div>
+        <!-- skills page -->
+        <div class="result-about" id="skills-page">
+          <h1 class="option-title">Skills :</h1>
+          <div class="skills-cards">
+            <div class="skill">
+              <div class="skill-title">Html</div>
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill">
+              <div class="skill-title">CSS</div>
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Bootstrap</div>
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Python</div>
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="skill">
+              <div class="skill-title">PHP</div>
+              <i class="fa-brands fa-php"></i>
+            </div>
+            <div class="skill">
+              <div class="skill-title">MySql</div>
+              <img src="imgs/sakila.png" class="skill-logo">
+            </div>
+            <div class="skill">
+              <div class="skill-title">Figma</div>
+              <i class="fa-brands fa-figma"></i>
+            </div>
+          </div>
+        </div>
+        <!-- about me page -->
+        <div class="result-about" id="aboutMe-page">
+          <h1 class="option-title">About me :</h1>
+          <div class="informations">
+            <div class="info-card">
+              <h4>Name :</h4>
+              <h2>Abdellah Khouden</h2>
+            </div>
+            <div class="info-card">
+              <h4>Phone :</h4>
+              <h2>(+212) 680696199</h2>
+            </div>
+            <div class="info-card">
+              <h4>Email :</h4>
+              <h2>khoudenak@gmail.com</h2>
+            </div>
+            <div class="info-card">
+              <h4>Nationality :</h4>
+              <h2>Moroccan</h2>
+            </div>
+            <div class="info-card">
+              <h4>City :</h4>
+              <h2>Agadir</h2>
+            </div>
+            <div class="info-card">
+              <h4>Languages :</h4>
+              <h2>Tamazight, Arabic, French, English.</h2>
+            </div>
+            <div class="info-card">
+              <h4>Hobies :</h4>
+              <h2>Chess, keyboard typing.</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- work section  -->
+    <section class="work" id="work">
+      <h5>Explore my projects</h5>
+      <h1>Work</h1>
+      <div class="slider">
+        <div class="project-image"></div>
+        <div class="list-nav">
+            <div class="projects-nav"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let menubtn = document.querySelector('.menubtn');
+      let closebtn = document.querySelectorAll('.closebtn');
+      let mobileHeader = document.querySelector('.mobileHeader');
+      menubtn.addEventListener('click',function(){
+          mobileHeader.style.transform = `translateX(0%)`;
+      })
+      closebtn.forEach(element => {
+        element.addEventListener('click',function(){
+          mobileHeader.style.transform = `translateX(100%)`;
+      })
+      });
+
+      // about-options
+
+      let optionsBtn = document.querySelectorAll('.option-btn');
+      let resultPages = document.querySelectorAll('.result-about');
+      optionsBtn.forEach(btn=>{
+        btn.addEventListener('click',function(){
+          optionsBtn.forEach(b=>{b.classList.remove('selected-option')});
+          btn.classList.add('selected-option');
+          let selectedDiv = document.querySelector(`#${btn.id}-page`);
+          resultPages.forEach(page => {
+            page.style.display = 'none';
+          })
+          selectedDiv.style.display = 'block';
+        })
+      });
+
+      // change logo color when hover
+
+      let skillCard = document.querySelectorAll('.skill');
+      skillCard.forEach(card => {
+        let img = card.lastElementChild;
+        card.addEventListener('mouseenter', function(){
+          if(img.tagName == 'IMG'){
+            img.src = img.src.slice(0,-4)+'2.png'; 
+          }
+        })
+        card.addEventListener('mouseleave', function(){
+          if(img.tagName == 'IMG'){
+            img.src = img.src.slice(0,-5)+'.png';
+          }  
+        })
+      })
+
+
+      // work section for the slider
+
+      let projectsContainer = document.querySelector(".project-image");
+      let projectsNav = document.querySelector(".projects-nav");
+
+      let projects = [
+        {
+          id: 1,
+          title: "instagram clone",
+          description:
+            "The front-end of the Instagram Clone showcases a responsive, visually appealing interface for displaying photo and video feeds and user profiles.",
+          source: "imgs/projects/instagram-clone.png",
+          stack: "Html5, Css3",
+          liveProject: null,
+          githubResp: null,
+        },
+        {
+          id: 2,
+          title: "Library Book Loan",
+          description:
+            "The Library Book Loan project, built with Python and Tkinter, enables users to manage book loans and maintain a catalog of available books through a simple graphical interface.",
+          source: "/imgs/projects/library project.png",
+          stack: "Python",
+          liveProject: null,
+          githubResp: "https://github.com/abdellahak/projet-bibliotheque",
+        },
+        {
+          id: 3,
+          title: "Eshoping cart",
+          description:
+            "EShopping Cart project uses HTML, CSS, and JavaScript to provide an interactive online shopping experience with dynamic product listings and a responsive checkout process.",
+          source: "/imgs/projects/eshoping cart project.png",
+          stack: "Html5, Css3, JavaScript",
+          liveProject: "https://abdellahak.github.io/eshoping-Cart/",
+          githubResp: "https://github.com/abdellahak/eshoping-Cart",
+        }
+      ];
+
+      let projectsNavigationHtml = projects
+        .map(
+          (prj) => `
+        <button class="project-card" id="card-${prj.id}" onclick = "changeProject(${prj.id})">
+            <div class="card-bg"></div>
+            <img src="${prj.source}" alt="${prj.title}" class="prj-icon">
+            <div>
+                <h1>${prj.title}</h1>
+            </div>
+        </button>
+                `
+        )
+        .join("");
+      projectsNav.innerHTML = projectsNavigationHtml;
+
+      let projectsCards = document.querySelectorAll(".project-card");
+      function changeNavColor(id) {
+        let targetedCard = document.getElementById(`card-${id}`);
+        projectsCards.forEach((card) => {
+          card.classList.remove("selected-card");
+        });
+        targetedCard.classList.add("selected-card");
+      }
+      let globalid = 0;
+      function showProject(id) {
+        let targetedProject = projects.find((prj) => prj.id == id);
+        projectsContainer.innerHTML = `
+        <div class="image-container">
+            <img
+            src="${targetedProject.source}"
+            alt="${targetedProject.title}"
+            class="prj-img"
+          />
+          </div>
+          <div class="img-infos">
+            <div class="prj-infos">
+              <div class="img-btns">
+                ${
+                  targetedProject.liveProject
+                    ? `<a href="${targetedProject.liveProject}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live project</a>`
+                    : ""
+                }
+                ${
+                  targetedProject.githubResp
+                    ? `<a href="${targetedProject.githubResp}">
+                  <i class="fa-brands fa-github"></i>
+                  Github respository
+                </a>`
+                    : ""
+                }
+              </div>
+              <h5>${targetedProject.stack}</h5>
+              <p>
+                ${targetedProject.description}
+              </p>
+              <h1>${targetedProject.title}</h1>
+            </div>
+          </div>
+        `;
+      }
+      function sliderMovement(id = globalid) {
+        globalid++;
+        if (globalid > projects.length) {
+          globalid = 1;
+        }
+        showProject(globalid);
+        changeNavColor(globalid);
+      }
+      let sliderInterval;
+      
+      function changeProject(id) {
+        if (sliderInterval) {
+          clearInterval(sliderInterval);
+        }
+        globalid = id - 1;
+        sliderMovement(globalid-1)
+        sliderInterval = setInterval(sliderMovement, 8000);
+      }
+
+      changeProject(1)
+    </script>
+  </body>
+</html>
