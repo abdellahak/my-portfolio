@@ -53,26 +53,6 @@ let projectsNav = document.querySelector(".projects-nav");
 let projects = [
   {
     id: 1,
-    title: "Instagram Clone",
-    description:
-      "A responsive front-end clone of Instagram, showcasing photo and video feeds, and user profiles.",
-    source: "imgs/projects/instagram-clone.webp",
-    stack: "HTML5, CSS3",
-    liveProject: "https://abdellahak.github.io/instagram-clone/",
-    githubResp: "https://github.com/abdellahak/instagram-clone/",
-  },
-  {
-    id: 2,
-    title: "Library Book Loan",
-    description:
-      "A Python and Tkinter application for managing book loans and maintaining a catalog of available books.",
-    source: "/imgs/projects/library project.webp",
-    stack: "Python",
-    liveProject: null,
-    githubResp: "https://github.com/abdellahak/projet-bibliotheque",
-  },
-  {
-    id: 3,
     title: "E-Shopping Cart",
     description:
       "An interactive online shopping cart built with HTML, CSS, and JavaScript, featuring dynamic product listings and a responsive checkout process.",
@@ -82,7 +62,7 @@ let projects = [
     githubResp: "https://github.com/abdellahak/eshoping-Cart",
   },
   {
-    id: 4,
+    id: 2,
     title: "Calculator App",
     description:
       "A simple calculator application built with HTML, CSS, and JavaScript.",
@@ -90,6 +70,26 @@ let projects = [
     stack: "HTML5, CSS3, JavaScript",
     liveProject: "https://abdellahak.github.io/calculator-app/",
     githubResp: "https://github.com/abdellahak/calculator-app",
+  },
+  {
+    id: 3,
+    title: "My Portfolio",
+    description:
+      "A responsive portfolio website built with HTML, CSS, and JavaScript.",
+    source: "/imgs/projects/my-portfolio.webp",
+    stack: "HTML5, CSS3, JavaScript",
+    liveProject: "https://abdellahak.github.io/my-portfolio",
+    githubResp: "https://github.com/abdellahak/my-portfolio",
+  },
+  {
+    id: 4,
+    title: "Instagram Clone",
+    description:
+      "A responsive front-end clone of Instagram, showcasing photo and video feeds, and user profiles.",
+    source: "imgs/projects/instagram-clone.webp",
+    stack: "HTML5, CSS3",
+    liveProject: "https://abdellahak.github.io/instagram-clone/",
+    githubResp: "https://github.com/abdellahak/instagram-clone/",
   },
   {
     id: 5,
@@ -103,13 +103,13 @@ let projects = [
   },
   {
     id: 6,
-    title: "My Portfolio",
+    title: "Library Book Loan",
     description:
-      "A responsive portfolio website built with HTML, CSS, and JavaScript.",
-    source: "/imgs/projects/my-portfolio.webp",
-    stack: "HTML5, CSS3, JavaScript",
-    liveProject: "https://abdellahak.github.io/my-portfolio",
-    githubResp: "https://github.com/abdellahak/my-portfolio",
+      "A Python and Tkinter application for managing book loans and maintaining a catalog of available books.",
+    source: "/imgs/projects/library project.webp",
+    stack: "Python",
+    liveProject: null,
+    githubResp: "https://github.com/abdellahak/projet-bibliotheque",
   },
 ];
 
