@@ -252,7 +252,7 @@ window.addEventListener("load", function () {
 // floot navbar
 let footNav = document.querySelector(".floot-nav-screen");
 let footer = document.querySelector("footer");
-
+// float nav hiding
 // float nav hiding
 window.addEventListener("scroll", function () {
   if (
@@ -261,6 +261,7 @@ window.addEventListener("scroll", function () {
   ) {
     footNav.classList.remove("hidden2");
   } else {
+    footNav.classList.add("hidden2");
     footNav.classList.add("hidden2");
   }
 });
