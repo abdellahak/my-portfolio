@@ -554,7 +554,6 @@ a[class="selectedopt"] {
 }
 .projects-nav {
   height: 100%;
-  max-height: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -757,7 +756,7 @@ footer {
   visibility: hidden;
   transition: all 0.5s ease-out;
 }
-.hidden2{
+.hidden2 {
   visibility: hidden;
 }
 
@@ -925,8 +924,6 @@ footer {
   color: var(--bg-color);
 }
 
-
-
 /* scrolling animation */
 
 @keyframes appear {
@@ -980,8 +977,6 @@ footer {
   animation-range: entry 0% cover 30%;
 }
 
-
-
 @media screen and (max-width: 750px) {
   .form-section {
     width: fit-content;
@@ -1015,6 +1010,7 @@ footer {
   }
   .projects-nav {
     overflow-y: scroll;
+    max-height: 400px;
   }
 }
 @media screen and (min-width: 768px) {
