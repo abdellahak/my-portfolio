@@ -25,8 +25,8 @@ To view the portfolio, visit the [Live Demo](https://abdellahak.github.io/my-por
 
 - **Name**: Abdellah Khouden
 - **Email**: khoudenak@gmail.com
-- **LinkedIn**: [\[My LinkedIn Profile\]](https://www.linkedin.com/in/abdellah-khouden/)
-- **GitHub**: [[My GitHub Profile](https://github.com/abdellahak)]
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/abdellah-khouden/)
+- **GitHub**: [My GitHub Profile](https://github.com/abdellahak)]
 
 ## Acknowledgments
 
