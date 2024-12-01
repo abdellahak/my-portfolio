@@ -56,7 +56,7 @@ let projects = [
     title: "instagram clone",
     description:
       "The front-end of the Instagram Clone showcases a responsive, visually appealing interface for displaying photo and video feeds and user profiles.",
-    source: "imgs/projects/instagram-clone.png",
+    source: "imgs/projects/instagram-clone.webp",
     stack: "Html5, Css3",
     liveProject: "https://abdellahak.github.io/instagram-clone/",
     githubResp: "https://github.com/abdellahak/instagram-clone/",
@@ -66,7 +66,7 @@ let projects = [
     title: "Library Book Loan",
     description:
       "The Library Book Loan project, built with Python and Tkinter, enables users to manage book loans and maintain a catalog of available books through a simple graphical interface.",
-    source: "/imgs/projects/library project.png",
+    source: "/imgs/projects/library project.webp",
     stack: "Python",
     liveProject: null,
     githubResp: "https://github.com/abdellahak/projet-bibliotheque",
@@ -76,7 +76,7 @@ let projects = [
     title: "Eshoping cart",
     description:
       "EShopping Cart project uses HTML, CSS, and JavaScript to provide an interactive online shopping experience with dynamic product listings and a responsive checkout process.",
-    source: "/imgs/projects/eshoping cart project.png",
+    source: "/imgs/projects/eshoping cart project.webp",
     stack: "Html5, Css3, JavaScript",
     liveProject: "https://abdellahak.github.io/eshoping-Cart/",
     githubResp: "https://github.com/abdellahak/eshoping-Cart",
