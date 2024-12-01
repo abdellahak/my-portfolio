@@ -757,6 +757,9 @@ footer {
   visibility: hidden;
   transition: all 0.5s ease-out;
 }
+.hidden2{
+  visibility: hidden;
+}
 
 .three-body {
   --uib-size: 35px;
@@ -877,12 +880,12 @@ footer {
   align-items: end;
   padding-bottom: 3rem;
   pointer-events: none;
-  transition: all 0.5s ease-out;
+  transition: background 0.5s ease-out;
 }
 
 .floot-nav {
   backdrop-filter: blur(10px);
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 25px;
   pointer-events: all;
   display: flex;
