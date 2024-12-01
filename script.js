@@ -251,24 +251,56 @@ window.addEventListener("load", function () {
 
 // floot navbar
 let footNav = document.querySelector(".floot-nav-screen");
+let footer = document.querySelector("footer");
 
+// float nav hiding
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 50 && window.scrollY < 2620) {
-    footNav.classList.remove("hidden");
-  } else if (window.scrollY > 2620) {
-    footNav.classList.add("hidden");
+  if (
+    window.scrollY > 50 &&
+    window.scrollY < footer.offsetTop - window.innerHeight
+  ) {
+    footNav.classList.remove("hidden2");
   } else {
-    footNav.classList.add("hidden");
+    footNav.classList.add("hidden2");
   }
 });
 
-let footopts = document.querySelectorAll(".footopt");
-footopts.forEach((opt) => {
-  opt.addEventListener("click", function () {
-    console.log("hello");
-    footopts.forEach((opt) => {
-      opt.classList.remove("selectedfootopt");
-    });
-    opt.classList.add("selectedfootopt");
+
+
+
+// float nav selection
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let footopts = document.querySelectorAll(".footopt");
+  let home = document.querySelector("#home");
+  let about = document.querySelector("#about");
+  let work = document.querySelector("#work");
+  let contact = document.querySelector("#contact");
+
+  window.addEventListener("scroll", function () {
+    if (
+      window.scrollY >= home.offsetTop - home.offsetHeight / 2 &&
+      window.scrollY < about.offsetTop - about.offsetHeight / 2
+    ) {
+      footopts.forEach((opt) => opt.classList.remove("selectedfootopt"));
+      footopts[0].classList.add("selectedfootopt");
+    } else if (
+      window.scrollY >= about.offsetTop - about.offsetHeight / 2 &&
+      window.scrollY < work.offsetTop - work.offsetHeight / 2
+    ) {
+      footopts.forEach((opt) => opt.classList.remove("selectedfootopt"));
+      footopts[1].classList.add("selectedfootopt");
+    } else if (
+      window.scrollY >= work.offsetTop - work.offsetHeight / 2 &&
+      window.scrollY < contact.offsetTop - contact.offsetHeight / 2
+    ) {
+      footopts.forEach((opt) => opt.classList.remove("selectedfootopt"));
+      footopts[2].classList.add("selectedfootopt");
+    } else if (window.scrollY >= contact.offsetTop - contact.offsetHeight / 2) {
+      footopts.forEach((opt) => opt.classList.remove("selectedfootopt"));
+      footopts[3].classList.add("selectedfootopt");
+    }
   });
 });
