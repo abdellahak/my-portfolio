@@ -84,7 +84,8 @@ let projects = [
   {
     id: 4,
     title: "Calculator App",
-    description: "A simple calculator application built with HTML, CSS, and JavaScript.",
+    description:
+      "A simple calculator application built with HTML, CSS, and JavaScript.",
     source: "/imgs/projects/calculator-app.webp",
     stack: "HTML5, CSS3, JavaScript",
     liveProject: "https://abdellahak.github.io/calculator-app/",
@@ -93,7 +94,8 @@ let projects = [
   {
     id: 5,
     title: "Arabic Website",
-    description: "A landing page for an Arabic website, built with HTML, CSS, and JavaScript.",
+    description:
+      "A landing page for an Arabic website, built with HTML, CSS, and JavaScript.",
     source: "/imgs/projects/arabic-website.webp",
     stack: "HTML5, CSS3",
     liveProject: "https://abdellahak.github.io/arabicwebsite/",
@@ -102,7 +104,8 @@ let projects = [
   {
     id: 6,
     title: "My Portfolio",
-    description: "A responsive portfolio website built with HTML, CSS, and JavaScript.",
+    description:
+      "A responsive portfolio website built with HTML, CSS, and JavaScript.",
     source: "/imgs/projects/my-portfolio.webp",
     stack: "HTML5, CSS3, JavaScript",
     liveProject: "https://abdellahak.github.io/my-portfolio",
@@ -244,4 +247,28 @@ window.addEventListener("load", function () {
   const loader = document.querySelector(".loader-screen");
   loader.classList.add("hidden");
   document.body.style.overflow = "visible";
+});
+
+// floot navbar
+let footNav = document.querySelector(".floot-nav-screen");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50 && window.scrollY < 2620) {
+    footNav.classList.remove("hidden");
+  } else if (window.scrollY > 2620) {
+    footNav.classList.add("hidden");
+  } else {
+    footNav.classList.add("hidden");
+  }
+});
+
+let footopts = document.querySelectorAll(".footopt");
+footopts.forEach((opt) => {
+  opt.addEventListener("click", function () {
+    console.log("hello");
+    footopts.forEach((opt) => {
+      opt.classList.remove("selectedfootopt");
+    });
+    opt.classList.add("selectedfootopt");
+  });
 });
