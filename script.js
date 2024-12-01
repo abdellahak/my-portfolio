@@ -257,7 +257,7 @@ let footer = document.querySelector("footer");
 window.addEventListener("scroll", function () {
   if (
     window.scrollY > 50 &&
-    window.scrollY < footer.offsetTop - window.innerHeight
+    window.scrollY < footer.offsetTop - window.innerHeight + 10
   ) {
     footNav.classList.remove("hidden2");
   } else {
@@ -265,12 +265,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
-
 // float nav selection
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let footopts = document.querySelectorAll(".footopt");
