@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- header of the page -->
-    <header class="header" id="home">
+    <header class="header" id="home" >
       <!-- the navbar -->
       <div class="headercontainer">
         <h1 class="logo">Khouden<span class="text-accent">.</span></h1>
@@ -19,14 +19,14 @@
           <a href="#work">Work</a>
           <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
-          <a href="#hireme"><button id="hire">Hire me</button></a>
+          <!-- <a href="#hireme"><button id="hire">Hire me</button></a> -->
         </nav>
         <div class="mobileNav"><button class="menubtn"><i class="fa-solid fa-bars"></i></button></div>
       </div>
 
       <!-- home section inside the header -->
       <section class="home">
-        <img src="imgs/man-user-circle-icon.webp" alt="" class="home-img">
+        <img src="/imgs/my picture.png" alt="" class="home-img">
         <h5>Hello I'm</h5>
         <h1>Abdellah khouden</h1>
         <h5>Full Stack Developer</h5>
@@ -43,8 +43,8 @@
           <i class="fa-brands fa-square-github"></i>
         </a>
        </div>
-       <div class="scroll-down">
-        <a href="#work">scroll down <i class="fa-solid fa-arrow-right-long"></i></a>
+       <div class="scroll scroll-down">
+        <a href="#contact">scroll down <i class="fa-solid fa-arrow-right-long"></i></a>
        </div>
 
        <!-- mobile aside navbar -->
@@ -57,7 +57,7 @@
             <a href="#work" class="closebtn">Work</a>
             <a href="#resume" class="closebtn">Resume</a>
             <a href="#contact" class="closebtn">Contact</a>
-            <a href="#hireme" class="closebtn"><button id="hire">Hire me</button></a>
+            <!-- <a href="#hireme" class="closebtn"><button id="hire">Hire me</button></a> -->
         </div>
       </div>
     </div>
@@ -183,171 +183,61 @@
         </div>
       </div>
     </section>
-    <script>
-      let menubtn = document.querySelector('.menubtn');
-      let closebtn = document.querySelectorAll('.closebtn');
-      let mobileHeader = document.querySelector('.mobileHeader');
-      menubtn.addEventListener('click',function(){
-          mobileHeader.style.transform = `translateX(0%)`;
-      })
-      closebtn.forEach(element => {
-        element.addEventListener('click',function(){
-          mobileHeader.style.transform = `translateX(100%)`;
-      })
-      });
-
-      // about-options
-
-      let optionsBtn = document.querySelectorAll('.option-btn');
-      let resultPages = document.querySelectorAll('.result-about');
-      optionsBtn.forEach(btn=>{
-        btn.addEventListener('click',function(){
-          optionsBtn.forEach(b=>{b.classList.remove('selected-option')});
-          btn.classList.add('selected-option');
-          let selectedDiv = document.querySelector(`#${btn.id}-page`);
-          resultPages.forEach(page => {
-            page.style.display = 'none';
-          })
-          selectedDiv.style.display = 'block';
-        })
-      });
-
-      // change logo color when hover
-
-      let skillCard = document.querySelectorAll('.skill');
-      skillCard.forEach(card => {
-        let img = card.lastElementChild;
-        card.addEventListener('mouseenter', function(){
-          if(img.tagName == 'IMG'){
-            img.src = img.src.slice(0,-4)+'2.png'; 
-          }
-        })
-        card.addEventListener('mouseleave', function(){
-          if(img.tagName == 'IMG'){
-            img.src = img.src.slice(0,-5)+'.png';
-          }  
-        })
-      })
-
-
-      // work section for the slider
-
-      let projectsContainer = document.querySelector(".project-image");
-      let projectsNav = document.querySelector(".projects-nav");
-
-      let projects = [
-        {
-          id: 1,
-          title: "instagram clone",
-          description:
-            "The front-end of the Instagram Clone showcases a responsive, visually appealing interface for displaying photo and video feeds and user profiles.",
-          source: "imgs/projects/instagram-clone.png",
-          stack: "Html5, Css3",
-          liveProject: null,
-          githubResp: null,
-        },
-        {
-          id: 2,
-          title: "Library Book Loan",
-          description:
-            "The Library Book Loan project, built with Python and Tkinter, enables users to manage book loans and maintain a catalog of available books through a simple graphical interface.",
-          source: "/imgs/projects/library project.png",
-          stack: "Python",
-          liveProject: null,
-          githubResp: "https://github.com/abdellahak/projet-bibliotheque",
-        },
-        {
-          id: 3,
-          title: "Eshoping cart",
-          description:
-            "EShopping Cart project uses HTML, CSS, and JavaScript to provide an interactive online shopping experience with dynamic product listings and a responsive checkout process.",
-          source: "/imgs/projects/eshoping cart project.png",
-          stack: "Html5, Css3, JavaScript",
-          liveProject: "https://abdellahak.github.io/eshoping-Cart/",
-          githubResp: "https://github.com/abdellahak/eshoping-Cart",
-        }
-      ];
-
-      let projectsNavigationHtml = projects
-        .map(
-          (prj) => `
-        <button class="project-card" id="card-${prj.id}" onclick = "changeProject(${prj.id})">
-            <div class="card-bg"></div>
-            <img src="${prj.source}" alt="${prj.title}" class="prj-icon">
-            <div>
-                <h1>${prj.title}</h1>
-            </div>
-        </button>
-                `
-        )
-        .join("");
-      projectsNav.innerHTML = projectsNavigationHtml;
-
-      let projectsCards = document.querySelectorAll(".project-card");
-      function changeNavColor(id) {
-        let targetedCard = document.getElementById(`card-${id}`);
-        projectsCards.forEach((card) => {
-          card.classList.remove("selected-card");
-        });
-        targetedCard.classList.add("selected-card");
-      }
-      let globalid = 0;
-      function showProject(id) {
-        let targetedProject = projects.find((prj) => prj.id == id);
-        projectsContainer.innerHTML = `
-        <div class="image-container">
-            <img
-            src="${targetedProject.source}"
-            alt="${targetedProject.title}"
-            class="prj-img"
-          />
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <h5>Let's Make Something Awesome</h5>
+      <h1>Contact Me</h1>
+      <div class="contactform">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form" id="contactform">
+          <h2>Your Next Step? Right Here!</h2>
+          <input type="hidden" name="access_key" value="a69adc5b-f6da-4f1a-a32d-df4ec603ce3a">
+          <div id="nameform" class="form-section">
+              <label>
+                  <span>N</span><span>a</span><span>m</span><span>e</span>
+              </label>
+              <input type="text" id="contactname" class="forminput" name="name">
           </div>
-          <div class="img-infos">
-            <div class="prj-infos">
-              <div class="img-btns">
-                ${
-                  targetedProject.liveProject
-                    ? `<a href="${targetedProject.liveProject}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live project</a>`
-                    : ""
-                }
-                ${
-                  targetedProject.githubResp
-                    ? `<a href="${targetedProject.githubResp}">
-                  <i class="fa-brands fa-github"></i>
-                  Github respository
-                </a>`
-                    : ""
-                }
-              </div>
-              <h5>${targetedProject.stack}</h5>
-              <p>
-                ${targetedProject.description}
-              </p>
-              <h1>${targetedProject.title}</h1>
-            </div>
+          <div id="emailform" class="form-section">
+              <label>
+                  <span>E</span><span>m</span><span>a</span><span>i</span><span>l</span>
+              </label>
+              <input type="email" id="contactemail" class="forminput" name="email">
           </div>
-        `;
-      }
-      function sliderMovement(id = globalid) {
-        globalid++;
-        if (globalid > projects.length) {
-          globalid = 1;
-        }
-        showProject(globalid);
-        changeNavColor(globalid);
-      }
-      let sliderInterval;
-      
-      function changeProject(id) {
-        if (sliderInterval) {
-          clearInterval(sliderInterval);
-        }
-        globalid = id - 1;
-        sliderMovement(globalid-1)
-        sliderInterval = setInterval(sliderMovement, 8000);
-      }
-
-      changeProject(1)
-    </script>
+          <div id="message" class="form-section">
+              <label>
+                  <span>Y</span><span>o</span><span>u</span><span>r</span><span>&nbsp;</span><span>M</span><span>e</span><span>s</span><span>s</span><span>a</span><span>g</span><span>e</span><span>.</span><span>.</span><span>.</span>
+              </label>
+              <textarea name="message" id="message" class="forminput"></textarea>
+          </div>
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <button type="submit">Contact Me!</button>
+      </form>
+      </div>
+      <div class="scroll scroll-up">
+        <a href="#home"><i class="fa-solid fa-arrow-left-long"></i> scroll up</a>
+       </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <h1>ABDELLAH KHOUDEN</h1>
+      <p>Thank you for visiting my portfolio! I'm dedicated to building impactful digital solutions and continuously expanding my skills in web development. Feel free to reach out via the contact form or connect with me on social media.</p>
+      <div class="social-medias">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-github"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </div>
+      <p id="rights">© Abdellah Khouden <span id="year"></span>. All rights reserved.</p>
+    </footer>
+    <!-- loader screen -->
+    <div class="loader-screen">
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
