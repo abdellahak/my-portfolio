@@ -173,7 +173,7 @@ a[class="selectedopt"] {
 .home-btns {
   margin: 2.5rem 0;
 }
-.home-btns button {
+.home-btn {
   padding: 0.75rem 1.2rem;
   background-color: transparent;
   border-radius: 22px;
@@ -183,16 +183,17 @@ a[class="selectedopt"] {
 .home-btns i {
   color: var(--accent);
 }
-.home-btns button:nth-child(2) {
+.home-btn:nth-child(2) {
   background-color: var(--accent);
   color: var(--bg-color);
+  text-decoration: none;
 }
-.home-btns button:hover {
+.home-btn:hover {
   background-color: white;
   color: var(--bg-color);
   border-color: white;
 }
-.home-btns button:nth-child(1):hover i {
+.home-btn:nth-child(1):hover i {
   color: var(--bg-color);
 }
 .socials-header {
@@ -455,6 +456,7 @@ a[class="selectedopt"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   padding: 10px;
   padding-top: 2rem;
@@ -553,12 +555,11 @@ a[class="selectedopt"] {
 }
 .projects-nav{
   height: 100%;
-  max-height: 500px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px 20px;
-  
   scrollbar-color: var(--accent) transparent;
 }
 .project-card{

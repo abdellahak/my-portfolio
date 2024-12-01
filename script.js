@@ -53,11 +53,11 @@ let projectsNav = document.querySelector(".projects-nav");
 let projects = [
   {
     id: 1,
-    title: "instagram clone",
+    title: "Instagram Clone",
     description:
-      "The front-end of the Instagram Clone showcases a responsive, visually appealing interface for displaying photo and video feeds and user profiles.",
+      "A responsive front-end clone of Instagram, showcasing photo and video feeds, and user profiles.",
     source: "imgs/projects/instagram-clone.webp",
-    stack: "Html5, Css3",
+    stack: "HTML5, CSS3",
     liveProject: "https://abdellahak.github.io/instagram-clone/",
     githubResp: "https://github.com/abdellahak/instagram-clone/",
   },
@@ -65,7 +65,7 @@ let projects = [
     id: 2,
     title: "Library Book Loan",
     description:
-      "The Library Book Loan project, built with Python and Tkinter, enables users to manage book loans and maintain a catalog of available books through a simple graphical interface.",
+      "A Python and Tkinter application for managing book loans and maintaining a catalog of available books.",
     source: "/imgs/projects/library project.webp",
     stack: "Python",
     liveProject: null,
@@ -73,13 +73,40 @@ let projects = [
   },
   {
     id: 3,
-    title: "Eshoping cart",
+    title: "E-Shopping Cart",
     description:
-      "EShopping Cart project uses HTML, CSS, and JavaScript to provide an interactive online shopping experience with dynamic product listings and a responsive checkout process.",
+      "An interactive online shopping cart built with HTML, CSS, and JavaScript, featuring dynamic product listings and a responsive checkout process.",
     source: "/imgs/projects/eshoping cart project.webp",
-    stack: "Html5, Css3, JavaScript",
+    stack: "HTML5, CSS3, JavaScript",
     liveProject: "https://abdellahak.github.io/eshoping-Cart/",
     githubResp: "https://github.com/abdellahak/eshoping-Cart",
+  },
+  {
+    id: 4,
+    title: "Calculator App",
+    description: "A simple calculator application built with HTML, CSS, and JavaScript.",
+    source: "/imgs/projects/calculator-app.webp",
+    stack: "HTML5, CSS3, JavaScript",
+    liveProject: "https://abdellahak.github.io/calculator-app/",
+    githubResp: "https://github.com/abdellahak/calculator-app",
+  },
+  {
+    id: 5,
+    title: "Arabic Website",
+    description: "A landing page for an Arabic website, built with HTML, CSS, and JavaScript.",
+    source: "/imgs/projects/arabic-website.webp",
+    stack: "HTML5, CSS3",
+    liveProject: "https://abdellahak.github.io/arabicwebsite/",
+    githubResp: "https://github.com/abdellahak/arabicwebsite",
+  },
+  {
+    id: 6,
+    title: "My Portfolio",
+    description: "A responsive portfolio website built with HTML, CSS, and JavaScript.",
+    source: "/imgs/projects/my-portfolio.webp",
+    stack: "HTML5, CSS3, JavaScript",
+    liveProject: "https://abdellahak.github.io/my-portfolio",
+    githubResp: "https://github.com/abdellahak/my-portfolio",
   },
 ];
 
