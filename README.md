@@ -13,7 +13,7 @@ This project is my personal portfolio showcasing my skills, projects, and experi
 
 ## Live Demo
 
-To view the portfolio, visit the [Live Demo](http://your-live-demo-link.com).
+To view the portfolio, visit the [Live Demo](https://abdellahak.github.io/my-portfolio/).
 
 ## Built With
 
