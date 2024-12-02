@@ -719,6 +719,10 @@ form label span {
   opacity: 1;
 }
 
+#error p{
+  color:#e74c3c;
+}
+
 /* footer */
 
 footer {

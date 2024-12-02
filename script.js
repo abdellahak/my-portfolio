@@ -227,14 +227,6 @@ function moveOutFocus() {
   }
 }
 
-// clear form after submission
-const form = document.querySelector("#contactform");
-form.addEventListener("submit", function () {
-  event.preventDefault();
-  this.submit();
-  this.reset();
-});
-
 // year for footer page
 
 let year = document.querySelector("#year");
@@ -299,4 +291,40 @@ document.addEventListener("DOMContentLoaded", function () {
       footopts[3].classList.add("selectedfootopt");
     }
   });
+});
+
+//  contact form validation
+
+
+// clear form after submission
+const form = document.querySelector("#contactform");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let valid = true;
+  const name = document.getElementById("contactname").value.trim();
+  const email = document.getElementById("contactemail").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const errorDiv = document.getElementById("error");
+  errorDiv.innerHTML = "";
+
+  if (name.length < 2) {
+    valid = false;
+    errorDiv.innerHTML += "<p>*Name must be at least 2 letters.</p>";
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    valid = false;
+    errorDiv.innerHTML += "<p>*Email must be valid.</p>";
+  }
+
+  if (message.length < 2) {
+    valid = false;
+    errorDiv.innerHTML += "<p>*Message must be at least 2 letters.</p>";
+  }
+
+  if (valid) {
+    this.submit();
+    this.reset();
+  }
 });
