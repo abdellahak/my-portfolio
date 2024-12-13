@@ -118,7 +118,7 @@ let projectsNavigationHtml = projects
     (prj) => `
         <button class="project-card" id="card-${prj.id}" onclick = "changeProject(${prj.id})">
             <div class="card-bg"></div>
-            <img src="${prj.source}" alt="${prj.title}" class="prj-icon">
+            <img src="${prj.source}" alt="${prj.title}" class="prj-icon" loading="lazy">
             <div>
                 <h1>${prj.title}</h1>
             </div>
@@ -145,6 +145,7 @@ function showProject(id) {
             src="${targetedProject.source}"
             alt="${targetedProject.title}"
             class="prj-img"
+            loading="lazy"
           />
           </div>
           <div class="img-infos">
