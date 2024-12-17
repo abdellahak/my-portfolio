@@ -614,9 +614,6 @@ a[class="selectedopt"] {
   padding: 30px 30px;
   text-align: start;
 }
-.form-section {
-  width: 100%;
-}
 .form h2 {
   color: var(--hover);
   font-size: 1.5rem;
