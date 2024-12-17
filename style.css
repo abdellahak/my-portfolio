@@ -895,11 +895,6 @@ footer {
   animation-timeline: view();
   animation-range: entry 0 cover 30%;
 }
-@media screen and (max-width: 750px) {
-  .form-section {
-    width: fit-content;
-  }
-}
 @media screen and (min-width: 1000px) {
   .header {
     padding-inline: 6rem;
@@ -920,7 +915,7 @@ footer {
     max-width: 700px;
   }
   .projects-nav {
-    max-height: 400px;
+    max-height: 330px;
     overflow-y: scroll;
   }
 }
