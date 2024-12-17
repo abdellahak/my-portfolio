@@ -329,3 +329,49 @@ form.addEventListener("submit", function (event) {
     this.reset();
   }
 });
+
+
+
+// animation for elements on small screens
+let aboutCards = document.querySelector(".cards-about");
+let cards = document.querySelectorAll(".card");
+
+function changeAnimation() {
+  if (window.innerWidth < 640) {
+      aboutCards.classList.remove("block");
+      cards.forEach((card) => {
+        card.classList.add("block");
+      });
+  } else {
+    aboutCards.classList.add("block");
+    cards.forEach((card) => {
+      card.classList.remove("block");
+    });
+  }
+};
+
+
+
+
+let projectsNavigation = document.querySelector(".projects-nav");
+let projectsCards2 = document.querySelectorAll(".project-card");
+
+function changeAnimation2(){
+  if(window.innerWidth < 1000){
+    projectsNavigation.classList.remove("block2");
+    projectsCards2.forEach((card) => {
+      card.classList.add("block2");
+    });
+  }else{
+    projectsNavigation.classList.add("block2");
+    projectsCards2.forEach((card) => {
+      card.classList.remove("block2");
+    });
+  }
+}
+
+changeAnimation();
+changeAnimation2();
+
+window.addEventListener("resize", changeAnimation);
+window.addEventListener("resize", changeAnimation2);
