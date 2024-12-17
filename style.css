@@ -677,7 +677,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 80px;
+  padding: 20px 10px;
   text-align: center;
 }
 .social-medias i {
@@ -964,6 +964,9 @@ footer {
   }
   .form {
     padding: 30px 60px;
+  }
+  footer {
+    padding: 20px 80px;
   }
 }
 @media screen and (min-width: 640px) {
