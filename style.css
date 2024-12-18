@@ -557,12 +557,12 @@ a[class="selectedopt"] {
   z-index: 1;
 }
 .selected-card {
-  background-color: var(--bg-color);
+  background-color: transparent;
   border: 1px solid var(--accent);
   scale: 1.02;
 }
 .selected-card .card-bg {
-  background-color: #2c2c37;
+  background-color: #404044;
   height: 100%;
   left: -100%;
   position: absolute;
