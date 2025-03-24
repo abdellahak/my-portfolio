@@ -53,6 +53,26 @@ let projectsNav = document.querySelector(".projects-nav");
 let projects = [
   {
     id: 1,
+    title: "Car Rental Website",
+    description:
+      "A comprehensive car rental web application built with React, allowing users to browse, book, and manage car rentals with ease.",
+    source: "/imgs/projects/car-rentals.webp",
+    stack: "React",
+    liveProject: "https://car-rental-react-js.vercel.app",
+    githubResp: "https://github.com/abdellahak/CarRental-ReactJS",
+  },
+  {
+    id: 2,
+    title: "E-commerce Website",
+    description:
+      "A fully-featured e-commerce website built with Laravel and Blade, offering a seamless shopping experience with product listings, user authentication, and a secure checkout process.",
+    source: "/imgs/projects/e-commerce website.webp",
+    stack: "Laravel, Blade",
+    liveProject: null,
+    githubResp: "https://github.com/abdellahak/_e-commerce-laravel",
+  },
+  {
+    id: 3,
     title: "E-Shopping Cart",
     description:
       "An interactive online shopping cart built with HTML, CSS, and JavaScript, featuring dynamic product listings and a responsive checkout process.",
@@ -60,26 +80,6 @@ let projects = [
     stack: "HTML5, CSS3, JavaScript",
     liveProject: "https://abdellahak.github.io/eshoping-Cart/",
     githubResp: "https://github.com/abdellahak/eshoping-Cart",
-  },
-  {
-    id: 2,
-    title: "Calculator App",
-    description:
-      "A simple calculator application built with HTML, CSS, and JavaScript.",
-    source: "/imgs/projects/calculator-app.webp",
-    stack: "HTML5, CSS3, JavaScript",
-    liveProject: "https://abdellahak.github.io/calculator-app/",
-    githubResp: "https://github.com/abdellahak/calculator-app",
-  },
-  {
-    id: 3,
-    title: "My Portfolio",
-    description:
-      "A responsive portfolio website built with HTML, CSS, and JavaScript.",
-    source: "/imgs/projects/my-portfolio.webp",
-    stack: "HTML5, CSS3, JavaScript",
-    liveProject: "https://abdellahak.github.io/my-portfolio",
-    githubResp: "https://github.com/abdellahak/my-portfolio",
   },
   {
     id: 4,
